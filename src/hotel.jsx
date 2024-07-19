@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HomeNav from "./HomeNav";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const HotelList = () => {
   const [hotels, setHotels] = useState([]);
@@ -72,7 +73,9 @@ const HotelList = () => {
                     <p>$ {hotels.price}</p>
                   </div>
                   <div className="pb-2 pt-2">
-                    <button className=" bg-blue-500 rounded-lg text-white font-bold p-3 pr-14 pl-14">View Deal</button>
+                    <Link to={`${hotels.id}`} className=" bg-blue-500 rounded-lg text-white font-bold p-3 pr-14 pl-14">View Deal</Link>
+                    {/* <button className=" bg-blue-500 rounded-lg text-white font-bold p-3 pr-14 pl-14">View Deal</button> */}
+
                   </div>
                   <div className="pt-2">
                     <div className="flex ">

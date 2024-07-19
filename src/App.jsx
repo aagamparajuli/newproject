@@ -14,6 +14,12 @@ import UsDestination from "./UsingSliceInDest";
 import UsTravelPackages from "./UsingSliceInTravelPack";
 import UsThingsToDo from "./UsingSliceInThingsTodo";
 import Footer from "./Footer";
+import Hotel from "./hotels";
+import About from "./About";
+import TravelPackagesS from "./SingleTravelpack";
+import TVPAbout from "./TVPAbout";
+import Profile from "./Profile";
+import Reviews from "./reviews";
 
 function App() {
   return (
@@ -35,8 +41,13 @@ function App() {
             <Route path="/UsingSliceInTravelPack" element={<UsTravelPackages />} />
             <Route path="/UsingSliceInThingsToDo" element={<UsThingsToDo />} />
             <Route path="/Footer" element={<Footer />} />
+            <Route path="/hotel/:id" element={<Hotel />} />
+            <Route path="/hotel/:id" element={<About />} />
+            <Route path="/travelPackages/:id" element={<TravelPackagesS />} />  
+            <Route path="/travelPackages/:id" element={<TVPAbout />} />  
+            <Route path="/Profile" element={<Profile />} />
+            <Route path="/reviews" element={<Reviews />} />
 
-            
           </Routes>
         </BrowserRouter>
 
