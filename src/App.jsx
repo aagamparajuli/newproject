@@ -1,6 +1,6 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./Landing";
 import CounterUse from "./demo";
 import HotelList from "./hotel";
@@ -20,6 +20,7 @@ import TravelPackagesS from "./SingleTravelpack";
 import TVPAbout from "./TVPAbout";
 import Profile from "./Profile";
 import Reviews from "./reviews";
+import DashBoard from "./Dash/DashBoard";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
             <Route path="/travelPackages/:id" element={<TVPAbout />} />  
             <Route path="/Profile" element={<Profile />} />
             <Route path="/reviews" element={<Reviews />} />
+            <Route path="/admin/*" element={<DashBoard />} />
 
           </Routes>
         </BrowserRouter>

@@ -5,11 +5,13 @@ import UsHotels from "./UsingSliceInHotels";
 import UsTravelPackages from "./UsingSliceInTravelPack";
 import UsThingsToDo from "./UsingSliceInThingsTodo";
 import Footer from "./Footer";
+import ImageSlider from "./imageSlider";
 
 function DestinationPage() {
   return (
     <>
       <HomeNav />
+      <ImageSlider />
       <div className="topd">
         <div className="flex pl-14 pt-6">
           <img src={haha} className="w-12 h-12 rounded-full" />

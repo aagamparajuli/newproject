@@ -17,12 +17,6 @@ function Nav() {
         <li>
           <Link to="/demo">Demo</Link>
         </li>
-        <li>
-          <Link to="/imageSlider">ImgSlider</Link>
-        </li>
-        <li>
-          <Link to="/home">Home</Link>
-        </li>
       </ul>
     </>
   );
